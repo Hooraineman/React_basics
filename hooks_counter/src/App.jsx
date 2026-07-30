@@ -5,17 +5,15 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App(){
-  let [value , setvalue] = useState(15) 
+  let [counter , setvalue] = useState(15) 
   // these can be any first on eis varibale and secod a function to handle  that variable // it is a hook which will control variables on ui 
   
   const AddValue = () =>{
-    counter = counter + 1
-      setvalue(counter)
+      setvalue(counter + 1)
   }
 
   const RemoveValue = () =>{
-    counter = counter - 1
-      setvalue(counter) 
+      setvalue(counter - 1) 
   }
 
   return (
