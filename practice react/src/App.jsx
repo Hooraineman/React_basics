@@ -2,13 +2,27 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import User from './props.jsx'
 
-function App() {
-  return (
-    <>
-      <h1>Main page</h1>
-    </>
-  )
+// if we have way more details then we cant do it like this it looks messsy
+// then we can put all details in a object then pass that to the component 
+function App(){
+   let MyObject = {
+    name : "hoorain",
+    age : "20",
+    seconname :"eman"
+   }
+   // for array
+   let arr =['uet','hd']
+  //let age = 18 
+    return(
+        <>
+        <h1>props in react</h1>
+        {/*<User name="hoorain" age={age}/>*/}
+        {/*<User user={MyObject}/>*/}
+        <User user ={arr[0]}/>
+        </>
+    )
 }
 
 export default App
