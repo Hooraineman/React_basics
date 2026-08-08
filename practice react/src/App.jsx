@@ -12,6 +12,7 @@ function App(){
     age : "20",
     seconname :"eman"
    }
+
    // for array
    let arr =['uet','hd']
   //let age = 18 
