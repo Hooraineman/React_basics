@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import User from './props.jsx'
+import User from './User.jsx'
+import Prop from './Props_2'
+import Style from './Styling'
 
 // if we have way more details then we cant do it like this it looks messsy
 // then we can put all details in a object then pass that to the component 
@@ -22,8 +24,14 @@ function App(){
         {/*<User name="hoorain" age={age}/>*/}
         {/*<User user={MyObject}/>*/}
         <User user ={arr[0]}/>
+
+        <Prop name="hoorain"/>
+        <Prop name=""/>
+        <Prop/>
+        <Style>hello childern</Style> 
         </>
     )
 }
+// in style there is a direct jsx  so style component can access that throught childern
 
 export default App
