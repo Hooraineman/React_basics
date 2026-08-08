@@ -28,7 +28,13 @@ function App(){
         <Prop name="hoorain"/>
         <Prop name=""/>
         <Prop/>
-        <Style>hello childern</Style> 
+        <Style color="yellow">  
+           <h3>hello childern</h3> 
+        </Style> 
+
+         <Style>  
+          <h3>hello childern 2</h3> 
+        </Style>
         </>
     )
 }
